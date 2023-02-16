@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 
+
+*/
+
+html,
+body {
+    font-family: Inter, sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #141414;
+}
+
+.gradient {
+    background: rgb(20, 20, 20);
+    background: linear-gradient(180deg, rgba(20, 20, 20, 0.5) 0%, rgba(20, 20, 20, 0.6) 16%, rgba(20, 20, 20, 0.68) 34%, rgba(20, 20, 20, 0.78) 51%, rgba(20, 20, 20, 0.85) 62%, rgba(20, 20, 20, 0.9) 71%, rgba(20, 20, 20, 0.93) 80%, rgba(20, 20, 20, 0.96) 90%, rgba(20, 20, 20, 0.99) 100%);
+    backdrop-filter: blur(20px);
+}
