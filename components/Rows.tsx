@@ -50,8 +50,8 @@ function Rows({ title, movies }: Props) {
                         onClick={() => handleClick('left')}
                     />
                     <div
-                        className="flex items-center space-x-0.5 overflow-x-scroll scrollbar-hide md:space-x-2.5 md:p-2"
                         ref={rowRef}
+                        className="flex items-center space-x-1 overflow-x-scroll scrollbar-hide md:space-x-2.5 md:p-2"
                     >
                         {movies.map((movie) => (
                             <Thumbnail key={movie.id} movie={movie} />

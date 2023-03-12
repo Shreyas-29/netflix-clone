@@ -44,7 +44,7 @@ const Home = ({
     <main className='relative min-h-screen bg-gradient-to-b'>
       <Head>
         <title>Netflix</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/netflix.png" />
       </Head>
 
       <Header />

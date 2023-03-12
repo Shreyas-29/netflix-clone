@@ -15,6 +15,7 @@ function Login() {
     const { signIn, signUp } = useAuth();
 
     const { register, handleSubmit, watch, formState: { errors } } = useForm<Inputs>();
+    
     const onSubmit: SubmitHandler<Inputs> = async ({ email, password }) => {
         if (login) {
             await signIn(email, password); 
@@ -29,7 +30,7 @@ function Login() {
         <section className='z-50 flex items-center justify-center h-screen px-4 py-4 transition lg:px-10'>
             <Head>
                 <title>Login - Netflix</title>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/netflix.png" />
             </Head>
 
             <Image

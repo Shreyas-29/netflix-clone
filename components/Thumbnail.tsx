@@ -21,8 +21,7 @@ function Thumbnail({ movie }: Props) {
             }}
             className='h- min-w-[180px] cursor-pointer transition duration-200 ease-out md:h- md:min-w-[260px] md:hover:scale-105'>
             <Image
-                src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path || movie.poster_path
-                    }`}
+                src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path || movie.poster_path}`}
                 alt=''
                 width={1000}
                 height={1000}

@@ -62,34 +62,33 @@ function Modal() {
                         playing
                         muted={muted}
                     />
-                    <div className='absolute bottom-10 flex w-full items-center justify-between px-10'>
-                        <div className='flex space-x-4'>
-                            <button className='flex items-center space-x-2 px-4 py-2 text-sm font-semibold hover:opacity-75 md:px-5 md:py-2 text-black bg-white rounded-md'>
-                                <FaPlay className='h-4 w-4 text-black' />  <span>Play</span>
+                    <div className='absolute bottom-10 flex w-full items-center justify-between px-4 sm:px-10'>
+                        <div className='flex space-x-4 items-center'>
+                            <button className='flex items-center space-x-2 px-3 py-2 text-xs md:text-sm font-semibold hover:opacity-75 md:px-5 md:py-2 text-black bg-white rounded-md'>
+                                <FaPlay className='h-3 md:h-4 w-3 md:w-4 text-black' />  <span>Play</span>
                             </button>
 
-                            <button className='border-white border-2 p-1 rounded-full w-10 h-10 flex items-center'>
-                                <FiPlus className='h-6 w-6 text-white m-auto' />
+                            <button className='border-white border-2 p-1 rounded-full w-8 md:w-10 h-8 md:h-10 flex items-center'>
+                                <FiPlus className='h-4 md:h-6 w-4 md:w-6 text-white m-auto' />
                             </button>
 
-                            <button className='border-white border-2 p-1 rounded-full w-10 h-10 flex items-center'>
-                                <MdOutlineThumbUpOffAlt className='h-6 w-6 text-white m-auto' />
+                            <button className='border-white border-2 p-1 rounded-full w-8 md:w-10 h-8 md:h-10 flex items-center'>
+                                <MdOutlineThumbUpOffAlt className='h-4 md:h-6 w-4 md:w-6 text-white m-auto' />
                             </button>
-
                         </div>
                         <button
-                            className='border-white border-2 p-1 rounded-full w-10 h-10 flex items-center'
+                            className='border-white border-2 p-1 rounded-full w-8 md:w-10 h-8 md:h-10 flex items-center'
                             onClick={() => setMuted(!muted)}>
                             {muted ? (
-                                <HiOutlineVolumeOff className='h-6 w-6 text-white m-auto' />
+                                <HiOutlineVolumeOff className='h-4 md:h-6 w-4 md:w-6 text-white m-auto' />
                             ) : (
-                                <HiVolumeUp className='h-6 w-6 text-white m-auto' />
+                                <HiVolumeUp className='h-4 md:h-6 w-4 md:w-6 text-white m-auto' />
                             )}
                         </button>
                     </div>
                 </div>
 
-                <div className="flex space-x-16 rounded-b-md bg-[#181818] px-10 py-8 text-white">
+                <div className="flex space-x-16 rounded-b-md bg-[#181818] px-4 sm:px-10 py-8 text-white">
                     <div className="space-y-6 text-lg">
                         <div className="flex items-center space-x-2 text-sm">
                             <p className="font-semibold text-green-400">
@@ -103,11 +102,11 @@ function Modal() {
                             </div>
                         </div>
                         <div className="flex flex-col gap-x-10 gap-y-4 font-light md:flex-row">
-                            <p className="w-5/6 text-sm">{movie?.overview}</p>
+                            <p className="sm:w-5/6 text-sm">{movie?.overview}</p>
                             <div className="flex flex-col space-y-3 text-sm">
                                 <div>
                                     <span className="text-[gray]">Genres:</span>{' '}
-                                    {genre.map((genre) => genre.name)}
+                                    {genre.map((genre) => genre.name)} Action
                                 </div>
 
                                 <div>
